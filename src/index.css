@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-color: #333333;
+  --gray-color: #4F4F4F;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Space Mono', monospace;
+}
+
+.py-mb {
+  padding: 0 1.9rem;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  word-spacing: -0.4rem;
+  letter-spacing: -0.1rem;
+}
+
+.image {
+  margin-bottom: 58px;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 75%;
+}
+
+header {
+  height: 4rem;
+  margin-bottom: 42px;
+  display: flex;
+  align-items: center;
+}
+
+body .body-main {
+  margin-bottom: 92px;
+}
+
+body .body-main h2 {
+  margin-bottom: 25px;
+  font-size: 3rem;
+  word-spacing: 0rem;
+  letter-spacing: -0.2rem;
+}
+
+body .body-main p {
+  margin-bottom: 64px;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+body .body-main a {
+  width: 210px;
+  padding: 23px;
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: var(--black-color);
+  color: #fff;
+}
+
+body .body-main a:hover {
+  background-color: #fff;
+  color: var(--black-color);
+}
+
+footer {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    height: 6rem;
+  }
+
+  main .main-flex {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .image {
+    width: 76%;
+    justify-content: unset;
+  }
+
+  .image img {
+    object-fit: contain;
+    width: 80%;
+    height: 90%;
+    margin-left: 32px;
+  }
+
+  body .body-main {
+    width: 77%;
+  }
+
+  body .body-main h2 {
+    font-size: 3.2rem;
+    letter-spacing: 0.07rem;
+    line-height: 5.1rem;
+  }
+
+  body .body-main p {
+    width: 325px;
+    margin-bottom: 52px;
+    line-height: 2.2rem;
+  }
+
+  body .body-main a {
+    width: 190px;
+    padding: 20px;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .m-ds {
+    max-width: 1188px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
